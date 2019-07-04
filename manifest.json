@@ -1,0 +1,22 @@
+{
+  "name": "Copy facilitator",
+  "description": "Awesome ext for TS21",
+  "version": "0.7",
+  "icons": {
+    "16": "icons/favicon-16x16.png",
+    "48": "icons/android-chrome-48x48.png",
+    "128": "icons/android-chrome-144x144.png"
+  },
+  "permissions": ["contextMenus","tabs", "http://*.tourinsoft.com/*"],
+  "background": {
+    "persistent": true,
+    "scripts": ["jquery.min.js","sample.js"]
+  },
+  "content_scripts": [
+    { 
+	"matches": ["http://*.tourinsoft.com/*"],
+      "js": ["jquery.min.js","inject.js"]
+    }
+  ],
+  "manifest_version": 2
+}
