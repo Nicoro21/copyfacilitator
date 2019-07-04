@@ -6,7 +6,7 @@ En développement
 
 Cette **extension pour chrome** permet de copier un modèle d'application de profil à des utilisateurs à un autre profil de droit.
 
-Attention, elle ne copie pour l'instant que les cases cochées, ne décoche pas les cases.
+Attention, la copie simple applique que les cases cochées, elle ne décoche pas les autres cases.
 
 Cette extension était initialement prévue pour copier des éléments d'une fiche précédement visitée dans la fiche  courante dans TS saisie V1.
 
