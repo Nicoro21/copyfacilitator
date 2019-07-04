@@ -10,7 +10,7 @@
   "permissions": ["contextMenus","tabs", "http://*.tourinsoft.com/*"],
   "background": {
     "persistent": true,
-    "scripts": ["jquery.min.js","sample.js"]
+    "scripts": ["jquery.min.js","bg.js"]
   },
   "content_scripts": [
     { 
