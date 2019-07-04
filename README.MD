@@ -6,6 +6,7 @@ Cette **extension pour chrome** permet de copier un modèle d'application de pro
 
 Attention, elle ne copie pour l'instant que les cases cochées, ne décoche pas les cases.
 
+Cette extension était initialement prévue pour copier des éléments d'une fiche précédement visitée dans la fiche  courante dans TS saisie V1
 
 
 # Installation
