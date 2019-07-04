@@ -28,7 +28,7 @@ Utiliser un compte administrateur/coordination.
 
 Ouvrir le listing des utilisateurs du profil
 
-![](https://github.com/Nicoro21/copyfacilitator/blob/master/doc/acces.PNG?raw=true)
+![](https://github.com/Nicoro21/copyfacilitator/blob/master/doc/acces2.PNG?raw=true)
 
 
 Clic droit dans la page
@@ -39,7 +39,7 @@ copie les cases cochées
 
 Puis ouvrir un autre profil
 
-![](https://github.com/Nicoro21/copyfacilitator/blob/master/doc/acces.PNG?raw=true)
+![](https://github.com/Nicoro21/copyfacilitator/blob/master/doc/acces2.PNG?raw=true)
 
 Et coller/appliquer les valeurs des cases cochées :
 
