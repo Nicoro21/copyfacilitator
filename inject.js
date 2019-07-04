@@ -1,6 +1,7 @@
 //content script
 var clickedEl = null;
 var chk="";
+var chkall="";
 
 document.addEventListener("mousedown", stockEltClicked, true);
 
@@ -95,14 +96,22 @@ function changeImg(){
 	  });
 	  //Scan des cases des profils
 	  chk="";
+	  chkall="";
 	  $(contents).find("input[type='checkbox']").each(function(){		
 		var idchk= $(this).attr('id');
-		if($(this).is(':checked') && !idchk.includes(',') ) {			
-			idchk = idchk.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\\\$&");
-			chk+="if ($(\"#fcentre\").contents().find('#"+ idchk +"').prop('checked') == false) $(\"#fcentre\").contents().find('#"+ idchk +"').click();";
+		if(!idchk.includes(',') ) {	
+			idchk = idchk.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\\\$&");	
+			if($(this).is(':checked')  ) {				
+				chk+="if ($(\"#fcentre\").contents().find('#"+ idchk +"').prop('checked') == false) $(\"#fcentre\").contents().find('#"+ idchk +"').click();";
+			}
+			else{
+				chkall+="if ($(\"#fcentre\").contents().find('#"+ idchk +"').prop('checked') == true) $(\"#fcentre\").contents().find('#"+ idchk +"').click();";	
+
+			}
 		}
 		console.log($(this).attr('checked'));
 	  });
+	  chkall+=chk;
 	  console.log(chk)
 	  console.log("champs : ");
 	  console.log(champs);
@@ -124,12 +133,16 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 	if(request.name == "copier") {
 		console.log("reçu il faut copier les cases " + request.id);
 		sendResponse(chk);
-	  }
-	  if(request.name == "coller") {
+	}
+	if(request.name == "cloner") {
+		console.log("reçu il faut copier les cases " + request.id);
+		sendResponse(chkall);
+	}
+	if(request.name == "coller") {
 		console.log("reçu il faut coller les cases" + request.valeur);  
 		eval(request.valeur);		
 		sendResponse({value: "collé"});
-	  } 
+	} 
 });
 
 

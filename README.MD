@@ -1,5 +1,7 @@
 # Copy facilitator pour TS
 
+
+
 En développement
 
 Cette **extension pour chrome** permet de copier un modèle d'application de profil à des utilisateurs à un autre profil de droit.
@@ -54,3 +56,7 @@ Fonctionne également sur la page des utilisateurs (de même structure).
 # Bonus 2
 
 Le loading screen est un peu plus coloré...parfois
+
+## Update v0.8 
+Ajout de la fonctionnalité "Copier toutes les cases / pour cloner" :
+Permet de copier les cases cochées mais aussi les cases décochées : permet de cloner 

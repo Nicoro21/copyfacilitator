@@ -42,6 +42,12 @@ function mycallback(info, tab,menuItemId) {
             chk=reponsecopier;      
           });
         break;
+      case 'cloner':
+        chrome.tabs.sendRequest(tab.id, {name:"cloner", id:menuItemId, valeur : tabChamps[menuItemId]}, function(reponsecopier) {
+          console.log("valeur de l'elt cloner :"+ reponsecopier); 
+          chk=reponsecopier;      
+        });
+      break;
      
       case 'coller':
           chrome.tabs.sendRequest(tab.id, {name:"coller", id:menuItemId, valeur : chk}, function(clickedEl) {
@@ -75,6 +81,8 @@ chrome.runtime.onMessage.addListener(
         }    
       sendResponse({farewell: "goodbye"});
       };
-        chrome.contextMenus.create({"title": "Copier les cases", "id": "copy",contexts :["page"],"id": "copier"});
-        chrome.contextMenus.create({"title": "Coller les cases", "id": "paste",contexts :["page"],"id": "coller"});
+        chrome.contextMenus.create({"title": "Copier les cases cochées", "id": "copy",contexts :["page"],"id": "copier"});
+        chrome.contextMenus.create({"title": "Copier toutes les cases / pour cloner", "id": "paste",contexts :["page"],"id": "cloner"});
+        chrome.contextMenus.create({"title": "Coller les cases copiées", "id": "paste",contexts :["page"],"id": "coller"});
+
   });
