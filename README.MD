@@ -6,7 +6,7 @@ Cette **extension pour chrome** permet de copier un modèle d'application de pro
 
 Attention, elle ne copie pour l'instant que les cases cochées, ne décoche pas les cases.
 
-Cette extension était initialement prévue pour copier des éléments d'une fiche précédement visitée dans la fiche  courante dans TS saisie V1
+Cette extension était initialement prévue pour copier des éléments d'une fiche précédement visitée dans la fiche  courante dans TS saisie V1.
 
 
 # Installation
@@ -17,12 +17,14 @@ Cette extension était initialement prévue pour copier des éléments d'une fic
 
 Pour installer à partir des sources, suivez les étapes suivantes :
 
-1.  Téléchargez le dossier contenant les sources
+1.  Téléchargez le dossier contenant les sources [ici](https://github.com/Nicoro21/copyfacilitator/archive/master.zip "ici") puis décompresser
 2.  Rendez-vous dans le gestionnaire d’extensions (Menu > Outils > Extensions)
 3.  Passez en ‘ Mode développeur ‘ en cochant la case correspondante en haut à droite de votre écran.
-4.  Trois boutons devraient apparaître. Cliquez sur ‘ Charger l’extension non empaquetée… ‘, puis choisissez le dossier contenant les codes sources et le manifest.json.
+4.  Trois boutons devraient apparaître. Cliquez sur ‘ Charger l’extension non empaquetée… ‘, puis choisissez le dossier contenant les codes sources et le manifest.json et les dossiesr icons et docs.
 
 # Utilisation
+
+Utiliser un compte administrateur/coordination.
 
 Ouvrir le listing des utilisateurs du profil
 
@@ -51,4 +53,4 @@ Fonctionne également sur la page des utilisateurs (de même structure).
 
 # Bonus 2
 
-Le loading screen est un peu plus coloré...
+Le loading screen est un peu plus coloré...parfois
