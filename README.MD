@@ -44,10 +44,10 @@ Et coller/appliquer les valeurs des cases cochées :
 
 Enfin enregistrer.
 
-#Bonus
+# Bonus
 
 Fonctionne également sur la page des utilisateurs (de même structure).
 
-#Bonus 2
+# Bonus 2
 
 Le loading screen est un peu plus coloré...
