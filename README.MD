@@ -2,7 +2,7 @@
 
 En développement
 
-Cette **extension pour chrome** permet de copier un modèle d'application de profils à des utilisateurs à un autre profil de droit.
+Cette **extension pour chrome** permet de copier un modèle d'application de profil à des utilisateurs à un autre profil de droit.
 
 Attention, elle ne copie pour l'instant que les cases cochées, ne décoche pas les cases.
 
