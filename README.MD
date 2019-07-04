@@ -20,7 +20,7 @@ Pour installer à partir des sources, suivez les étapes suivantes :
 1.  Téléchargez le dossier contenant les sources [ici](https://github.com/Nicoro21/copyfacilitator/archive/master.zip "ici") puis décompresser
 2.  Rendez-vous dans le gestionnaire d’extensions (Menu > Outils > Extensions)
 3.  Passez en ‘ Mode développeur ‘ en cochant la case correspondante en haut à droite de votre écran.
-4.  Trois boutons devraient apparaître. Cliquez sur ‘ Charger l’extension non empaquetée… ‘, puis choisissez le dossier contenant les codes sources et le manifest.json et les dossiesr icons et docs.
+4.  Trois boutons devraient apparaître. Cliquez sur ‘ Charger l’extension non empaquetée… ‘, puis choisissez le dossier contenant les codes sources, le manifest.json et les dossiers icons et docs.
 
 # Utilisation
 
